@@ -25,26 +25,29 @@ let altura = parseFloat(prompt('Digite sua altura, usando ponto. Ex.: 1.70m: '))
 // Calcular o IMC usando a fórmula IMC = Peso / altura 2
 let imc = peso / (altura * altura);
 
+// Mostra o IMC na tela e deixa duas casas decimais
+console.log("\nSeu IMC é de " + imc.toFixed(2) + "\n");
+
 // Decidir
 if (imc < 18.5) {
-  console.log("\nVocê está abaixo do peso\n");
+  console.log("Você está abaixo do peso\n");
 
 } else if (imc >= 18.5 && imc < 25) {
-  console.log("\nVocê está com o peso normal\n");
+  console.log("Você está com o peso normal\n");
 
 } else if (imc >= 25 && imc < 30) {
-  console.log("\nVocê está com sobrepeso\n");
+  console.log("Você está com sobrepeso\n");
 
 } else {
-  console.log("\nVocê está obeso\n");
+  console.log("Você está com obesidade");
   
   if (imc >= 30 && imc < 35) {
-    console.log("\nVocê está com obesidade de Grau 1\n");
+    console.log("Grau 1\n");
 
   } else if (imc >= 35 && imc < 40) {
-    console.log("\nVocê está com obesidade de Grau 2\n");
+    console.log("Grau 2\n");
 
   } else {
-    console.log("\nVocê está com obesidade de Grau 3\n");
+    console.log("Grau 3\n");
   }
 }
