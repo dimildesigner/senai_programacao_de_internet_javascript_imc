@@ -14,7 +14,7 @@
 // Obesidade Grau 2: IMC entre 35 e 39,9
 // Obesidade Grau 3: IMC igual ou maior que 40
 
-console.log("........... Calculadora de IMC ...........");
+console.log("\n........... Calculadora de IMC ...........\n");
 
 const prompt = require(`prompt-sync`)()
 
@@ -27,24 +27,24 @@ let imc = peso / (altura * altura);
 
 // Decidir
 if (imc < 18.5) {
-  console.log("Abaixo do peso");
+  console.log("\nVocê está abaixo do peso\n");
 
 } else if (imc >= 18.5 && imc < 25) {
-  console.log("Peso normal");
+  console.log("\nVocê está com o peso normal\n");
 
 } else if (imc >= 25 && imc < 30) {
-  console.log("Sobrepeso");
+  console.log("\nVocê está com sobrepeso\n");
 
 } else {
-  console.log("Obesidade");
+  console.log("\nVocê está obeso\n");
   
   if (imc >= 30 && imc < 35) {
-    console.log("Obesidade Grau 1");
+    console.log("\nVocê está com obesidade de Grau 1\n");
 
   } else if (imc >= 35 && imc < 40) {
-    console.log("Obesidade Grau 2");
+    console.log("\nVocê está com obesidade de Grau 2\n");
 
   } else {
-    console.log("Obesidade Grau 3");
+    console.log("\nVocê está com obesidade de Grau 3\n");
   }
 }
